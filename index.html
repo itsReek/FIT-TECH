@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Fit-Tech</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="template/catagory/sports/baseball/baseball.js"></script>
+    <script src="template/catagory/sports/basketball/basketball.js"></script>
+    <script src="template/catagory/sports/batminton/batminton.js"></script>
+    <script src="template/catagory/sports/boxing/boxing.js"></script>
+    <script src="template/catagory/sports/cricket/cricket.js"></script>
+    <script src="template/catagory/sports/football/football.js"></script>
+    <script src="template/catagory/sports/hockey/hockey.js"></script>
+    <script src="template/catagory/sports/judo/judo.js"></script>
+    <script src="template/catagory/sports/rugby/rugby.js"></script>
+    <script src="template/catagory/sports/tennis/tennis.js"></script>
+    <header id="interface" class="interface">
+        <nav>
+            <div>
+                <h1 class="fit">FitTech</h1>
+            </div>
+            <div class="navbar" id="navbar"> 
+                <li><button onclick="window.location.href='index.html'" class="navLink">Home</button></li>
+                <li><button onclick="window.location.href='template/nav/about.html'" class="navLink">About</button></li>
+                <li><button onclick="window.location.href='template/nav/service.html'" class="navLink">Services</button></li> 
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <form id="input-section" onsubmit="handleForm(event)">
+            <div class="input-box">
+                <img src="input-pic.jpg" alt="" class="input-pic" />
+                <label for="height">Height (in feet):</label>
+                <input type="text" maxlength="5" id="height" name="height" placeholder="Enter height (in feet)" required />
+                
+                <label for="weight">Weight (in kg):</label>
+                <input type="number" maxlength="5"  id="weight" name="weight" placeholder="Enter weight (in kg)" required />
+        
+                <button type="submit">Enter</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
