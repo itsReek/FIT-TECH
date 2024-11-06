@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitTech Videos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('../../../../../static/images/background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            color: white;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 10vh;
+            z-index: 1000;
+            background-color: rgba(68, 78, 84, 0.342);
+            box-shadow: 1px 1px 10px rgb(175, 174, 174);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+          
+        .navbar {
+            width: 30%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+          
+        nav li button {
+            text-decoration: none;
+            background: linear-gradient(to bottom, #04566c, #47051d);
+            color: #fff;
+            padding: 10px;
+            font-size: 18px;
+            font-family: "Fugaz One", cursive;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgb(162, 216, 245);
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+          
+        nav li button:hover {
+            transform: translateY(-5px) scale(1.05);
+            font-weight: 600;
+            border: 2px solid black;
+            box-shadow: 0 3px 15px rgb(197, 162, 245);
+            background: linear-gradient(to bottom, #94dfea, #d997df);
+            color: black;
+        }
+          
+        nav h1 {
+            font-size: 45px;
+            font-family: 'Fugaz One', cursive, Georgia, "Times New Roman", Times, serif;
+            margin-left: 55px;
+            background: linear-gradient(to right, #8ab6ff, #ff87a3, #f9d3a6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+            padding: 10px 0;
+        }
+          
+
+        .video-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            margin-top: 12vh;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .video-box {
+            width: 40vh;
+            height: 25vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.13);
+            border: 3px solid #fff;
+            border-radius: 15px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: -10px 10px 10px rgba(59, 54, 54, 0.5);
+            text-shadow: 2px 2px 4px rgb(111, 155, 166);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <h1 class="fit">FitTech</h1>
+        </div>
+        <div class="navbar" id="navbar">
+            <li><button onclick="window.location.href='../../../../../index.html'" class="navLink">Home</button></li>
+            <li><button onclick="window.location.href='../../../../nav/about.html'" class="navLink">About</button></li>
+            <li><button onclick="window.location.href='../../../../nav/service.html'" class="navLink">Services</button></li> 
+        </div>
+    </nav>
+
+    <div class="video-col">
+        <div class="video-box" onclick="window.open('https://youtu.be/39uMLYTh40Q')">Video 1</div>
+        <div class="video-box" onclick="window.open('https://youtu.be/0yCvC8Sc7Z4')">Video 2</div>
+        <div class="video-box" onclick="window.open('https://youtu.be/39uMLYTh40Q')">Video 3</div>
+        <div class="video-box" onclick="window.open('https://youtu.be/0yCvC8Sc7Z4')">Video 4</div>
+        <div class="video-box" onclick="window.open('https://youtu.be/39uMLYTh40Q')">Video 5</div>
+        <div class="video-box" onclick="window.open('https://youtu.be/0yCvC8Sc7Z4')">Video 6</div>
+        <div class="video-box" onclick="window.open('https://youtu.be/39uMLYTh40Q')">Video 7</div>
+        <div class="video-box" onclick="window.open('https://youtu.be/0yCvC8Sc7Z4')">Video 8</div>
+        <div class="video-box" onclick="window.open('https://youtu.be/39uMLYTh40Q')">Video 9</div>
+        <div class="video-box" onclick="window.open('https://youtu.be/0yCvC8Sc7Z4')">Video 10</div>
+    </div>
+</body>
+</html>
