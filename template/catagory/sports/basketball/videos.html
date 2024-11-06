@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>FitTech Videos</title>
     <style>
+
         * {
             margin: 0;
             padding: 0;
@@ -23,8 +25,8 @@
             overflow-x: hidden;
             scroll-behavior: smooth;
         }
-
-        nav {
+        
+            nav {
             position: fixed;
             top: 0;
             left: 0;
@@ -90,19 +92,30 @@
             align-items: center;
         }
 
+        .video-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+            max-width: 500px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 10px;
+        }
+
         .video-box {
-            width: 40vh;
-            height: 25vh;
+            width: 60%;
+            height: 15vh;
             display: flex;
             align-items: center;
             justify-content: center;
             background-color: rgba(255, 255, 255, 0.13);
             border: 3px solid #fff;
-            border-radius: 15px;
-            color: white;
-            font-size: 24px;
+            border-radius: 10px;
+            color: rgb(244, 167, 167);
+            font-size: 30px;
             font-weight: bold;
-            box-shadow: -10px 10px 10px rgba(59, 54, 54, 0.5);
+            box-shadow: -5px 5px 10px rgba(59, 54, 54, 0.5);
             text-shadow: 2px 2px 4px rgb(111, 155, 166);
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -111,6 +124,13 @@
         .video-box:hover {
             transform: scale(1.05);
             box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .description {
+            color: white;
+            font-size: 15px;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -127,16 +147,46 @@
     </nav>
 
     <div class="video-col">
-        <div class="video-box" onclick="window.open('https://youtu.be/39uMLYTh40Q')">Video 1</div>
-        <div class="video-box" onclick="window.open('https://youtu.be/0yCvC8Sc7Z4')">Video 2</div>
-        <div class="video-box" onclick="window.open('https://youtu.be/39uMLYTh40Q')">Video 3</div>
-        <div class="video-box" onclick="window.open('https://youtu.be/0yCvC8Sc7Z4')">Video 4</div>
-        <div class="video-box" onclick="window.open('https://youtu.be/39uMLYTh40Q')">Video 5</div>
-        <div class="video-box" onclick="window.open('https://youtu.be/0yCvC8Sc7Z4')">Video 6</div>
-        <div class="video-box" onclick="window.open('https://youtu.be/39uMLYTh40Q')">Video 7</div>
-        <div class="video-box" onclick="window.open('https://youtu.be/0yCvC8Sc7Z4')">Video 8</div>
-        <div class="video-box" onclick="window.open('https://youtu.be/39uMLYTh40Q')">Video 9</div>
-        <div class="video-box" onclick="window.open('https://youtu.be/0yCvC8Sc7Z4')">Video 10</div>
+        <div class="video-container">
+            <div class="video-box" onclick="window.open('https://youtu.be/39uMLYTh40Q')"><i class="fa-brands fa-youtube v1"></i></div>
+            <p class="description">Learn the basics of cricket with essential tips and tricks to improve your game.</p>
+        </div>
+        <div class="video-container">
+            <div class="video-box" onclick="window.open('https://youtu.be/0yCvC8Sc7Z4')"><i class="fa-brands fa-youtube v2"></i></div>
+            <p class="description">Learn the basics of cricket with essential tips and tricks to improve your game.</p>
+        </div>
+        <div class="video-container">
+            <div class="video-box" onclick="window.open('https://youtu.be/39uMLYTh40Q')"><i class="fa-brands fa-youtube v3"></i></div>
+            <p class="description">Learn the basics of cricket with essential tips and tricks to improve your game.</p>
+        </div>
+        <div class="video-container">
+            <div class="video-box" onclick="window.open('https://youtu.be/0yCvC8Sc7Z4')"><i class="fa-brands fa-youtube v4"></i></div>
+            <p class="description">Learn the basics of cricket with essential tips and tricks to improve your game.</p>
+        </div>
+        <div class="video-container">
+            <div class="video-box" onclick="window.open('https://youtu.be/39uMLYTh40Q')"><i class="fa-brands fa-youtube v5"></i></div>
+            <p class="description">Learn the basics of cricket with essential tips and tricks to improve your game.</p>
+        </div>
+        <div class="video-container">
+            <div class="video-box" onclick="window.open('https://youtu.be/0yCvC8Sc7Z4')"><i class="fa-brands fa-youtube v6"></i></div>
+            <p class="description">Learn the basics of cricket with essential tips and tricks to improve your game.</p>
+        </div>
+        <div class="video-container">
+            <div class="video-box" onclick="window.open('https://youtu.be/39uMLYTh40Q')"><i class="fa-brands fa-youtube v7"></i></div>
+            <p class="description">Learn the basics of cricket with essential tips and tricks to improve your game.</p>
+        </div>
+        <div class="video-container">
+            <div class="video-box" onclick="window.open('https://youtu.be/0yCvC8Sc7Z4')"><i class="fa-brands fa-youtube v8"></i></div>
+            <p class="description">Learn the basics of cricket with essential tips and tricks to improve your game.</p>
+        </div>
+        <div class="video-container">
+            <div class="video-box" onclick="window.open('https://youtu.be/39uMLYTh40Q')"><i class="fa-brands fa-youtube v9"></i></div>
+            <p class="description">Learn the basics of cricket with essential tips and tricks to improve your game.</p>
+        </div>
+        <div class="video-container">
+            <div class="video-box" onclick="window.open('https://youtu.be/0yCvC8Sc7Z4')"><i class="fa-brands fa-youtube v10"></i></div>
+            <p class="description">Learn the basics of cricket with essential tips and tricks to improve your game.</p>
+        </div>
     </div>
 </body>
 </html>
