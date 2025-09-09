@@ -1,1 +1,60 @@
-This is FitTech
+🏋️‍♂️ Fit-Tech
+
+A modern Fitness & Sports Website designed to promote health, exercise, and sports awareness. Built with HTML, CSS, and JavaScript, this project showcases fitness-related content, images, and interactivity.
+
+🚀 Features
+
+🖼️ Attractive fitness-themed UI
+
+📱 Responsive design (works on mobile, tablet, and desktop)
+
+⚡ Lightweight and fast
+
+🎨 Custom styling with style.css
+
+🧑‍💻 Interactive elements using script.js
+
+🛠️ Tech Stack
+
+Frontend: HTML, CSS, JavaScript
+
+Assets: Fitness images (.jpg) stored in /static/images
+
+Fit-Tech/
+│── static/
+│   ├── images/           # All fitness-related images
+│   │   ├── about-background.jpg
+│   │   ├── background.jpg
+│   │   ├── input-pic.jpg
+│   │   ├── plankingMan.jpg
+│   │   ├── runningGirl.jpg
+│   │   ├── some.jpg
+│   │   ├── sportspic.jpg
+│── template/             # (Optional templates if added later)
+│── index.html            # Main landing page
+│── style.css             # Stylesheet
+│── script.js             # JavaScript logic
+│── readme.md             # Project documentation
+⚡ Getting Started
+
+Clone this repository
+git clone https://github.com/itsReek/Fit--tech.git
+cd Fit--tech
+Open in Browser
+Just open index.html in your browser.
+
+(Optional) Use Live Server Extension in VS Code for auto-refresh while editing.
+
+🎯 Future Enhancements
+
+Add a BMI Calculator
+
+Include Workout Schedules
+
+Add a Nutrition Section
+
+Create a User Dashboard
+
+🤝 Contributing
+
+Contributions are welcome! If you’d like to improve the project, feel free to fork and submit a pull request.
